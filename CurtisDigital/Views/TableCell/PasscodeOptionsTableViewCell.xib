@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Oswald-Regular.ttf">
+            <string>Oswald-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="55" id="sb1-uf-bOo" customClass="PasscodeOptionsTableViewCell" customModule="CurtisDigital" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sb1-uf-bOo" id="9C2-SV-dES">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="54.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_checked_active" translatesAutoresizingMaskIntoConstraints="NO" id="0wt-ZS-pSr">
+                        <rect key="frame" x="320" y="6.5" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="0wt-ZS-pSr" secondAttribute="height" multiplier="1:1" id="lNQ-cn-gYp"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 Days" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3p-4g-kQd">
+                        <rect key="frame" x="16" y="17" width="55.5" height="21"/>
+                        <fontDescription key="fontDescription" name="Oswald-Regular" family="Oswald Regular" pointSize="18"/>
+                        <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ora-qx-AxX" customClass="MDCInkView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ora-qx-AxX" firstAttribute="top" secondItem="9C2-SV-dES" secondAttribute="top" id="4g4-Hb-Icc"/>
+                    <constraint firstItem="m3p-4g-kQd" firstAttribute="leading" secondItem="9C2-SV-dES" secondAttribute="leadingMargin" id="GcV-N6-SHK"/>
+                    <constraint firstItem="0wt-ZS-pSr" firstAttribute="centerY" secondItem="9C2-SV-dES" secondAttribute="centerY" id="VDq-Ie-Xkv"/>
+                    <constraint firstItem="m3p-4g-kQd" firstAttribute="centerY" secondItem="9C2-SV-dES" secondAttribute="centerY" id="aTV-Lc-zJX"/>
+                    <constraint firstAttribute="trailing" secondItem="ora-qx-AxX" secondAttribute="trailing" id="l6u-GG-0kD"/>
+                    <constraint firstAttribute="trailing" secondItem="0wt-ZS-pSr" secondAttribute="trailing" constant="15" id="n1I-rH-Mco"/>
+                    <constraint firstAttribute="bottom" secondItem="ora-qx-AxX" secondAttribute="bottom" constant="-0.5" id="wLp-Tr-YLV"/>
+                    <constraint firstItem="ora-qx-AxX" firstAttribute="leading" secondItem="9C2-SV-dES" secondAttribute="leading" id="yxX-dW-a2h"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="color" keyPath="rippleColor">
+                    <color key="value" white="0.0" alpha="0.33101342430000003" colorSpace="calibratedWhite"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="checkedImageView" destination="0wt-ZS-pSr" id="0Dh-co-zJJ"/>
+                <outlet property="optionLabel" destination="m3p-4g-kQd" id="nCO-ex-2r2"/>
+            </connections>
+            <point key="canvasLocation" x="38.5" y="-67.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_checked_active" width="40" height="40"/>
+    </resources>
+</document>
